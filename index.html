@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Mishra - Data Analyst</title>
+    <meta name="description" content="Detail-oriented Data Analyst specializing in Python, SQL, Power BI, and Tableau.">
+    <meta name="keywords" content="Data Analyst, Python, SQL, Power BI, Tableau, Portfolio, Data Science">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <p>Processing Insights...</p>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-glass" id="navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#hero-section">
+                <span class="brand-text">Abhishek.Data</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#hero-section">Home</a></li>
+                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#about-section">About</a></li>
+                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio-section">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero-section" class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-7 order-2 order-lg-1">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            <span class="greeting">Hello World, I'm</span><br>
+                            <span class="name">Abhishek Mishra</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            I'm a detail-oriented <span class="highlight">Data Analyst</span>. I transform raw, complex datasets into interactive dashboards and actionable operational insights.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-primary btn-lg smooth-scroll">
+                                <i class="bi bi-envelope-check-fill me-2"></i>Let's Collaborate
+                            </a>
+                            <a href="#portfolio-section" class="btn btn-outline-light btn-lg smooth-scroll">
+                                <i class="bi bi-bar-chart-fill me-2"></i>View Projects
+                            </a>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-github"></i></a>
+                            <a href="mailto:mishraa3631@gmail.com" class="social-link"><i class="bi bi-envelope-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-1 order-lg-2">
+                    <div class="hero-image-container">
+                        <div class="hero-image-wrapper">
+                            <div class="hero-image d-flex align-items-center justify-content-center" style="background: var(--bg-dark); border-radius: 50%;">
+                                <i class="bi bi-database-fill-gear text-primary" style="font-size: 6rem;"></i>
+                            </div>
+                            <div class="hero-image-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <section id="about-section" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Bridging the gap between raw tracking numbers and executive business strategy</p>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="about-image-container">
+                        <div class="about-image d-flex flex-column align-items-center justify-content-center bg-dark p-5 border border-secondary" style="height: 380px; border-radius: 20px;">
+                            <i class="bi bi-graph-up-arrow text-primary mb-3" style="font-size: 4rem;"></i>
+                            <h4 class="text-center">Thakur College of Science and Commerce</h4>
+                            <p class="text-muted text-center m-0">BSc Data Science<br>[2023 - 2026]</p>
+                        </div>
+                        <div class="about-image-overlay"></div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="about-content">
+                        <h3 class="about-title">Data Discovery & Strategy</h3>
+                        <p class="about-description">
+                            I hold hands-on expertise across pipeline execution steps: comprehensive data cleaning, deep exploratory data analysis (EDA), and automated metric reporting using Python, SQL, and robust business intelligence environments.
+                        </p>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="about-details">
+                                    <li><i class="bi bi-mortarboard-fill"></i><strong>Degree:</strong> BSc Data Science</li>
+                                    <li><i class="bi bi-building"></i><strong>University:</strong> University of Mumbai</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="about-details">
+                                    <li><i class="bi bi-envelope-fill"></i><strong>Email:</strong> mishraa3631@gmail.com</li>
+                                    <li><i class="bi bi-geo-alt-fill"></i><strong>Location:</strong> Mumbai, India</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <p class="about-extra">
+                            "Data is clean when it supports clear actions. My core mission is turning unorganized database metrics into neat, reliable business roadmaps."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats" class="stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="stat-item">
+                        <i class="bi bi-code-slash"></i>
+                        <span class="stat-number" data-target="1000">0</span>
+                        <p>Lines of Query Cleaned</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="stat-item">
+                        <i class="bi bi-kanban"></i>
+                        <span class="stat-number" data-target="2">0</span>
+                        <p>Major Analytical End-to-End Projects</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="stat-item">
+                        <i class="bi bi-award"></i>
+                        <span class="stat-number" data-target="3">0</span>
+                        <p>Industry Specialization Track Certifications</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Technical Matrix</h2>
+                <p class="section-subtitle">The software configurations, languages, and technical platforms I operate daily</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h4 class="mb-4 text-primary"><i class="bi bi-terminal me-2"></i>Programming & Analysis</h4>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Python (Pandas, NumPy)</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">SQL / Relational Schema Queries</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Exploratory Data Analysis (EDA)</span>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="95%"></div></div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <h4 class="mb-4 text-primary"><i class="bi bi-pie-chart me-2"></i>Visualization Ecosystems</h4>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Power BI Suite & DAX Formulas</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Tableau / Looker Studio Engine</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Advanced MS Excel Workbooks</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio-section" class="section-padding bg-dark-subtle">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Case Studies & Projects</h2>
+                <p class="section-subtitle">Demonstrated implementations breaking open performance datasets</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-12 mb-5">
+                    <div class="portfolio-item">
+                        <div class="row align-items-center">
+                            <div class="col-md-5">
+                                <div class="portfolio-image d-flex align-items-center justify-content-center bg-dark" style="height: 250px;">
+                                    <i class="bi bi-cart-check-fill text-primary" style="font-size: 5rem;"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="portfolio-content">
+                                    <h5 class="portfolio-title">Comprehensive Sales Trends Analysis</h5>
+                                    <p class="portfolio-description">
+                                        Processed cross-border raw retail logs utilizing Python frameworks to clean irregular formats. Generated correlation maps via Seaborn before assembling a native Power BI layout displaying core performance metrics.
+                                    </p>
+                                    <div class="portfolio-tech">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">Pandas</span>
+                                        <span class="tech-tag">Matplotlib</span>
+                                        <span class="tech-tag">Power BI</span>
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-sm">
+                                        <i class="bi bi-git me-2"></i>Examine Source
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-12 mb-4">
+                    <div class="portfolio-item">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 order-md-2">
+                                <div class="portfolio-image d-flex align-items-center justify-content-center bg-dark" style="height: 250px;">
+                                    <i class="bi bi-person-dash-fill text-primary" style="font-size: 5rem;"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-7 order-md-1">
+                                <div class="portfolio-content">
+                                    <h5 class="portfolio-title">Customer Churn Diagnostic Architecture</h5>
+                                    <p class="portfolio-description">
+                                        Queried normalized user tracking tables over MySQL servers to calculate immediate retention deficits. Projected recurring churn trends onto a unified Tableau production canvas detailing customer lifetime drops.
+                                    </p>
+                                    <div class="portfolio-tech">
+                                        <span class="tech-tag">MySQL</span>
+                                        <span class="tech-tag">Tableau</span>
+                                        <span class="tech-tag">SQL Window Functions</span>
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-sm">
+                                        <i class="bi bi-git me-2"></i>Examine Source
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Verified Qualifications</h2>
+                <p class="section-subtitle">Evaluated specializations confirming hands-on programming efficiency</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-stars"></i></div>
+                        <h5 class="service-title">Data Cleaning Domain</h5>
+                        <p class="service-description text-muted">Issued by Kaggle Academy — Focused on missing asset imputations, structural normalization, and leakage handling.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-braces-asterisk"></i></div>
+                        <h5 class="service-title">Intro to Programming Track</h5>
+                        <p class="service-description text-muted">Issued by Kaggle Academy — Validating logic parameters, script workflows, loops, and data structures.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-terminal-fill"></i></div>
+                        <h5 class="service-title">Python 101 for Data Science</h5>
+                        <p class="service-description text-muted">Foundational execution logic targeting structured automation vectors and linear math array management.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding bg-dark-subtle">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Initiate Workspace Sync</h2>
+                <p class="section-subtitle">Available for junior roles, analytical freelance contracts, and pipeline assembly partnerships</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-5 mb-4">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
+                            <div class="contact-details">
+                                <h6>HQ Base</h6>
+                                <p>Mumbai, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="bi bi-telephone"></i></div>
+                            <div class="contact-details">
+                                <h6>Direct VoIP line</h6>
+                                <p>+91 9919907202</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="bi bi-envelope"></i></div>
+                            <div class="contact-details">
+                                <h6>Mail Gateway</h6>
+                                <p>mishraa3631@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7">
+                    <form class="contact-form" id="contactForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label">Identifier Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Return Communication Address</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Query Subject Matrix</label>
+                            <input type="text" class="form-control" id="subject" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message Payload</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100">
+                            <i class="bi bi-send-fill me-2"></i>Transmit Inquiry
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <p class="footer-text m-0">© 2026 Compiled by Abhishek Mishra. Readability Verified.</p>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
