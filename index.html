@@ -77,7 +77,7 @@
     .brand {
       font-family: 'Space Grotesk', sans-serif;
       font-weight: 700;
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       background: linear-gradient(135deg, var(--primary), var(--accent));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -244,6 +244,20 @@
       display: inline-block;
       border: 1px solid rgba(124, 92, 252, 0.25);
     }
+    .project-link {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .project-link:hover {
+      color: #05c78b;
+      text-decoration: underline;
+    }
     .icon-circle {
       width: 52px;
       height: 52px;
@@ -282,7 +296,18 @@
       visibility: visible;
     }
 
-    /* Mobile adjustments */
+    /* Contact grid – perfectly even */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
     @media (max-width: 768px) {
       .section-padding {
         padding: 60px 0;
@@ -293,6 +318,10 @@
       .hero-section {
         padding-top: 7rem;
         min-height: 90vh;
+      }
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
       }
     }
     @media (max-width: 576px) {
@@ -311,7 +340,7 @@
 
   <nav class="navbar navbar-expand-lg fixed-top navbar-custom" id="navbar">
     <div class="container">
-      <a class="navbar-brand" href="#hero"><span class="brand">AM.</span></a>
+      <a class="navbar-brand" href="#hero"><span class="brand">Abhishek</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -421,24 +450,27 @@
       </div>
       <div class="row justify-content-center g-4">
         <div class="col-md-6 col-lg-4">
-          <div class="card-glass">
+          <div class="card-glass d-flex flex-column">
             <h5 class="fw-bold">📊 Sales Data Analysis</h5>
-            <p class="text-secondary mt-2">Analyzed sales dataset using Python (Pandas, NumPy). Performed data cleaning, EDA, and created visualizations. Built an interactive Power BI dashboard for sales KPIs.</p>
-            <div><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Power BI</span></div>
+            <p class="text-secondary mt-2 flex-grow-1">Analyzed sales dataset using Python (Pandas, NumPy). Performed data cleaning, EDA, and created visualizations. Built an interactive Power BI dashboard for sales KPIs.</p>
+            <div class="mb-2"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Power BI</span></div>
+            <a href="https://github.com/the-mishraji/the-mishraji-Sales-Data-Analysis-" target="_blank" class="project-link mt-2"><i class="bi bi-github"></i> GitHub Repository</a>
           </div>
         </div>
         <div class="col-md-6 col-lg-4">
-          <div class="card-glass">
+          <div class="card-glass d-flex flex-column">
             <h5 class="fw-bold">📉 Customer Churn Analysis</h5>
-            <p class="text-secondary mt-2">Extracted and analyzed data using SQL. Identified churn factors and designed a Tableau dashboard to visualize patterns, offering retention strategies.</p>
-            <div><span class="tag">SQL</span><span class="tag">Tableau</span><span class="tag">EDA</span></div>
+            <p class="text-secondary mt-2 flex-grow-1">Extracted and analyzed data using SQL. Identified churn factors and designed a Tableau dashboard to visualize patterns, offering retention strategies.</p>
+            <div class="mb-2"><span class="tag">SQL</span><span class="tag">Tableau</span><span class="tag">EDA</span></div>
+            <a href="https://github.com/the-mishraji/Customer-Churn-Analysis-" target="_blank" class="project-link mt-2"><i class="bi bi-github"></i> GitHub Repository</a>
           </div>
         </div>
         <div class="col-md-6 col-lg-4">
-          <div class="card-glass">
+          <div class="card-glass d-flex flex-column">
             <h5 class="fw-bold">🏋️ Virtual Fitness Trainer</h5>
-            <p class="text-secondary mt-2">Developed a pose estimation and rep-counting system using Python and OpenCV. Analyzed workout data to provide form feedback and progress tracking through interactive dashboards.</p>
-            <div><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Power BI</span><span class="tag">MediaPipe</span></div>
+            <p class="text-secondary mt-2 flex-grow-1">Developed a pose estimation and rep-counting system using Python and OpenCV. Analyzed workout data for form feedback and progress tracking.</p>
+            <div class="mb-2"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">MediaPipe</span></div>
+            <a href="https://the-mishraji.github.io/vft/" target="_blank" class="project-link mt-2"><i class="bi bi-box-arrow-up-right"></i> Live Demo</a>
           </div>
         </div>
       </div>
@@ -479,20 +511,20 @@
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="card-glass">
-            <div class="row g-4 text-center text-md-start">
-              <div class="col-md-6 d-flex align-items-center justify-content-center justify-content-md-start gap-3">
+            <div class="contact-grid">
+              <div class="contact-item">
                 <div class="icon-circle"><i class="bi bi-geo-alt-fill"></i></div>
                 <div><strong>Location</strong><p class="text-secondary mb-0">Mumbai, India</p></div>
               </div>
-              <div class="col-md-6 d-flex align-items-center justify-content-center justify-content-md-start gap-3">
+              <div class="contact-item">
                 <div class="icon-circle"><i class="bi bi-envelope-fill"></i></div>
                 <div><strong>Email</strong><p class="text-secondary mb-0">mishraa3631@gmail.com</p></div>
               </div>
-              <div class="col-md-6 d-flex align-items-center justify-content-center justify-content-md-start gap-3">
+              <div class="contact-item">
                 <div class="icon-circle"><i class="bi bi-telephone-fill"></i></div>
                 <div><strong>Phone</strong><p class="text-secondary mb-0">+91 9919907202</p></div>
               </div>
-              <div class="col-md-6 d-flex align-items-center justify-content-center justify-content-md-start gap-3">
+              <div class="contact-item">
                 <div class="icon-circle"><i class="bi bi-linkedin"></i></div>
                 <div><strong>LinkedIn</strong><p class="text-secondary mb-0">/in/abhishek-mishra</p></div>
               </div>
